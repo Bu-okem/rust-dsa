@@ -16,8 +16,9 @@ mod state_database;
 // use hashmaps::use_hashmap;
 // use singly_linked_list::use_singly_linked_list;
 // use stacks_and_queues::use_stacks_is_valid;
-use merkle_tree::use_merkle_tree;
+// use merkle_tree::use_merkle_tree;
+use state_database::use_db;
 
 fn main() {
-    use_merkle_tree();
+    use_db();
 }
