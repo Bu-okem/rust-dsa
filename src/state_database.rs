@@ -54,6 +54,10 @@ impl StateDatabase {
             }
             hashed = next_level;
         }
+        
+        if hashed.is_empty() {
+            return hash_data("");
+        }
 
         hashed[0].clone()
     }
